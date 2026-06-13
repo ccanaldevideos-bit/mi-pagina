@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Programa de Nahuel</title>
+</head>
+<body>
+    <h1>Programa de Nahuel</h1>
+
+    <label>¿Cómo te llamas?</label><br>
+    <input id="nombre"><br><br>
+
+    <label>¿Cuántos años tenés?</label><br>
+    <input id="edad" type="number"><br><br>
+
+    <button onclick="mostrar()">Enviar</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function mostrar() {
+            let nombre = document.getElementById("nombre").value;
+            let edad = document.getElementById("edad").value;
+
+            document.getElementById("resultado").innerText =
+                "hola " + nombre + "\n" +
+                "haci que te llamas " + nombre + " y tenes " + edad + " años";
+        }
+    </script>
+</body>
+</html>
